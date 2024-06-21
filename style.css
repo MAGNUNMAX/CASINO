@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./asset/img/maquina.avif);
+}
+
+#texto{
+    color: red;
+    margin-top: 55px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.container{
+    
+    border-radius: 25px;
+    border: 9px solid black;
+    width: 1200px;
+    height: 900px;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+    /* border: 1px solid red;*/
+     grid-template-rows: 200px  auto 100px;
+     grid-template-columns: repeat(4,1fr);
+     gap :10px;
+}
+
+#header{
+    grid-area: header;
+    grid-column: span(4);
+   /* border: 1px solid red;*/
+    
+}
+
+#main{
+    grid-area: main;
+   /* border: 1px solid rgb(17, 14, 163);*/
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#footer{
+    grid-area: footer;
+    grid-column: span(4);
+   /* border: 1px solid black; */
+    background-color: rgb(107, 99, 99);
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    margin-top: 100px;
+    
+
+  
+}
+
+.banner{
+    grid-column: 1/span(4);
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#icon_1{
+   
+    
+    width: 200px;
+    object-fit: cover;
+
+}
+
+#icon_2{
+   
+    width: 200px;
+    object-fit: cover;
+}
+
+
+#icon_3{
+   
+    width: 200px;
+    object-fit: cover;
+}
+
+.boton{
+    width: 200px;
+    height: 50px;
+    margin-top: 40px ;
+    border: 6px solid rgb(206, 63, 63);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(58, 58, 7);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    
+}
+
+.boton:active{
+    border: 6px solid whitesmoke;
+    color: white;
+    background-color: black;
+}
