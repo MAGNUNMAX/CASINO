@@ -71,6 +71,7 @@ function checkWin(number1,number2,number3){
 
 function machineWeel(){
     var audio = new Audio('./asset/sound/wheel2.wav');
+    audio.volume=0.3;
     audio.play();
     
     
